@@ -13,7 +13,7 @@ public class test_93 {
     }
 }
 
-class Solution_80 {
+class Solution80 {
     public List<String> restoreIpAddresses(String s) {
         int len = s.length();
         List<String> res = new ArrayList<>();
@@ -36,7 +36,7 @@ class Solution_80 {
             if (i >= len) {
                 break;
             }
-            if (reside * 3 < len - i) {
+            if ((reside - 1) * 3 < len - i - 1) {
                 continue;
             }
             if (judgeIpSegment(s, begin, i)) {
